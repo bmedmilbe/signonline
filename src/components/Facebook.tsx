@@ -1,5 +1,3 @@
-import React from "react";
-
 const Facebook = () => {
   const shareOnFacebook = () => {
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=https://signonline.vercel.app`;
