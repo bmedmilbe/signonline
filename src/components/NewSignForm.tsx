@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useAddSignature, { NewSign } from "../hooks/useAddSignature";
+import Facebook from "./Facebook";
 
 const NewSignForm = () => {
   const addSignature = useAddSignature(1);
@@ -84,10 +85,13 @@ const NewSignForm = () => {
           id="phone"
         />
       </div>
-      <div className="col-12  align-middle">
+      <div className="col-6  align-middle">
         <button type="submit" className="btn btn-primary my-2">
           Assinar
         </button>
+      </div>
+      <div className="col-6  align-middle">
+        <Facebook />
       </div>
     </form>
   );
