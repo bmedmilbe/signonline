@@ -24,7 +24,7 @@ const Document = () => {
 
         <Letter htmlString={data?.text || ""} />
 
-        <p className="paragraph text-center">{"[assinaturas]"}</p>
+        <p className="paragraph text-center">{"[assinantes]"}</p>
 
         <p className="paragraph fw-bold  text-center">
           {"=== FINAL DA PETIÇÃO ==="}
