@@ -24,7 +24,7 @@ const NewSignForm = () => {
     e.preventDefault();
     setSubmitted(false);
     if (!formData.name) {
-      setError("Erro: Insira o teu primeiro e último nome.");
+      setError("Erro: Insira o teu nome completo.");
 
       return;
     } else if (!formData.id_number) {
@@ -53,7 +53,7 @@ const NewSignForm = () => {
       )}
       <div className="col-md-4  align-middle">
         <label htmlFor="name" className="form-label">
-          Primeiro e último nome
+          Nome completo
         </label>
         <input
           type="text"
