@@ -7,9 +7,9 @@ const Facebook = () => {
   return (
     <div className="text-end">
       {/* ... other content ... */}
-      <button className="btn btn-primary" onClick={shareOnFacebook}>
+      <span className="btn btn-primary" onClick={shareOnFacebook}>
         Partilhar no Facebook
-      </button>
+      </span>
       {/* ... other content ... */}
     </div>
   );
