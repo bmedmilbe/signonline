@@ -6,18 +6,26 @@ const Document = () => {
   // console.log(data?.description);
   return (
     <>
-      <h1 className="text-center my-2 fw-bold">{data?.title}</h1>
+      <h1 className="text-center my-2 fw-bold fs-3">{data?.title}</h1>
       <img
-        src={
-          data?.image ||
-          "https://images.unsplash.com/photo-1736967439874-d0c856eacda1?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
+        src={"miquesbaner.png"}
         className="img-fluid"
         alt="Petition Image"
         width={"100%"}
       />
       <div className="my-2">
+        <p className="paragraph fw-bold  text-center">
+          {"=== INÍCIO DA PETIÇÃO ==="}
+        </p>
+        <p className="paragraph fw-bold  fst-italic">Assunto: {data?.title}</p>
+
         <Letter htmlString={data?.text || ""} />
+
+        <p className="paragraph text-center">{"[assinaturas]"}</p>
+
+        <p className="paragraph fw-bold  text-center">
+          {"=== FINAL DA PETIÇÃO ==="}
+        </p>
       </div>
       <p className="text-white bg-success p-2 fw-bold rounded fs-3 text-center">
         <span className="text-warning">{data?.signs.length}</span> santomenses
