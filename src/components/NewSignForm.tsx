@@ -36,8 +36,11 @@ const NewSignForm = () => {
     setSubmitted(true);
   };
   return (
-    <form className="row g-4" onSubmit={handleSubmit}>
-      <h2 className="text-center">Assinar</h2>
+    <form
+      className="row g-4 border-2 border-top border-success"
+      onSubmit={handleSubmit}
+    >
+      <h2 className="text-center mt-1">Assinar</h2>
       {error && (
         <div className="alert alert-danger" role="alert">
           {error}

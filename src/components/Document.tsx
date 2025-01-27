@@ -7,6 +7,9 @@ const Document = () => {
   return (
     <>
       <h1 className="text-center my-2 fw-bold fs-3">{data?.title}</h1>
+      <p className="paragraph fw-bold text-center fst-italic">
+        {data?.description}
+      </p>
       <img
         src={"miquesbaner.png"}
         className="img-fluid"

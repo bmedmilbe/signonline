@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="container">
         <div
-          className="section"
+          className="section mb-4"
           style={{ maxHeight: "80vh", overflow: "auto" }}
         >
           <Document />
